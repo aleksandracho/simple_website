@@ -1,0 +1,200 @@
+@import url(reset.css);
+html {
+    font-size: 62.5%;
+    font-family: 'Lato', sans-serif;
+}
+
+.center {
+    max-width: 1030px;
+    margin: auto;
+}
+
+.top {
+    background: url(../img/mountains.jpg) no-repeat;
+    height: 356px;
+   
+}
+
+ul {
+    font-size: 1.3rem;
+    font-weight: bold;
+    list-style-type: none;
+    margin-left: 60rem;
+    padding: 1.5rem;
+}
+
+li {
+    display: inline;
+    margin-right: 3rem;
+}
+
+.search {
+    background: url(../img/search.svg) right no-repeat;
+    height: 5rem;
+    display: block;
+    margin-right: 3rem;
+    margin-top: -3.5rem
+}
+
+.grey {
+    color: #eeeeee;
+}
+
+.light_grey {
+    color: #f3f3f3;
+}
+
+h1 {
+    font-size: 2.4rem;
+    color: #fff;
+    margin-top: 1.8rem;
+    margin-left: 5rem;
+}
+
+h2 {
+    font-size: 3.6rem;
+    padding-top: 3.5rem;
+    padding-bottom: 3rem;
+    text-align: center;
+    background-color: #eeeeee;
+}
+
+h4 {
+    font-size: 3.6rem;
+    padding-bottom: 3rem;
+    padding-left: 8rem;
+    padding-top: 5rem;
+}
+p {
+    font-size: 1.6rem;
+    line-height: 1.44;
+    padding-right: 5rem;
+    padding-left: 5rem;
+}
+
+.line_top {
+    background-color: #cacaca;
+    height: 0.2rem;
+}
+
+.text {
+    column-count: 2;
+    background-color: #eeeeee;
+    padding-bottom: 3rem;
+}
+
+.line_bottom {
+    max-width: 103rem;
+    background-color: #cacaca;
+    height: 0.2rem;
+}
+img {
+    margin-right: 25rem;
+    margin-top: -1rem;
+    float: right;
+}
+.adress {
+    font-size: 1.8rem;
+    line-height: 2;
+    background-color: #fff;
+    float: right;
+    margin-right: 14rem;
+    text-align: center;
+    color: #474545;
+    
+}
+
+form {
+    float:left;
+    width: 32rem;
+    padding-left: 8rem;
+}
+
+.data {
+    display: inline-block;
+    width: 32rem;
+    height: 3.4rem;
+    
+}
+
+
+input {
+    width: 9em;
+    height: 3.5rem;
+    margin-right: 3rem;
+    font-size: 1.4rem;
+    text-align: center;
+    font-family: 'Lato';
+}
+
+textarea {
+    width: 28rem;
+    height: 3.4rem;
+    margin-top: 2.5rem;
+    padding: .5rem;
+    text-align: center;
+    font-size: 1.4rem;
+    font-size: 1.4rem;
+    font-family: 'Lato';
+    
+}
+input, textarea {
+    
+    background: none;
+    border: 1px #c9c9c9 solid;
+    font-size: 1.4rem;
+    color: #6a6868;
+}
+
+button {
+    background: #999999;
+    border: none;
+    padding: 0.5rem 2rem;
+    color: #fff;
+    font-size: 1.2rem;
+    float: right;
+    cursor: pointer;
+    margin-top: 1rem;
+    margin-right: 3rem;
+}
+
+.bottom {
+    background-color: #fff;
+    min-height: 32rem;
+}
+
+footer {
+    position: relative;
+    background-color: #eeeeee;
+    height: 13rem;
+}
+
+.icons {
+    max-width: 22%;
+    top: 30%;
+    margin: auto;
+    position: relative;
+}
+
+a {
+    display: inline-block;
+   
+}
+
+.fb {
+    background: url(../img/facebook.svg) no-repeat;
+    height: 5.5rem;
+    width: 5.5rem;
+}
+
+.insta {
+    background: url(../img/instagram.svg) no-repeat;
+    height: 5.5rem;
+    width: 5.5rem;
+}
+
+.twitter {
+    background: url(../img/twitter.svg) no-repeat;
+    height: 5.5rem;
+    width: 5.5rem;
+}
