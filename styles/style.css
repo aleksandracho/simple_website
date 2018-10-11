@@ -166,7 +166,7 @@ button {
 footer {
     position: relative;
     background-color: #eeeeee;
-    height: 13rem;
+    /* height: 13rem; */
 }
 
 .icons {
@@ -197,4 +197,75 @@ a {
     background: url(../img/twitter.svg) no-repeat;
     height: 5.5rem;
     width: 5.5rem;
+}
+.contact {
+    float: left;
+    margin: 1%;
+    width: 46%;
+}
+.contact2 {
+    float: left;
+    margin: 1%;
+    width: 46%;
+    padding-top: 125px;
+}
+
+@media all and (max-width: 980px) {
+
+    ul {
+    font-size: -0.7rem;
+    font-weight: normal;
+    list-style-type: none;
+    margin-left: 25rem;
+    padding: 2.5rem;
+    }
+
+}
+@media all and (max-width: 820px) {
+
+.contact {
+    float: left;
+    margin: 1%;
+    width: 98%;
+}
+.contact2 {
+    float: left;
+    margin: 1%;
+    width: 98%;
+    padding: 0%;
+}
+footer{
+    float: left;
+    margin: 0%;
+    width: 100%;
+    background-color: #eeeeee;
+    min-height: 170px;
+}
+a {
+    display: block;
+   
+}
+h4 {
+    
+    text-align: center;
+}
+
+form {
+    width: 32rem;
+    margin: auto;
+    position: relative;
+    float: none;
+
+}
+img {
+    margin-right: 36rem;
+}
+.adress {
+    margin-right: 25rem;
+}
+.icons {
+    max-width: 4%;
+}
+@media all and (max-width:655px){
+/* hamburger manu? */
 }
