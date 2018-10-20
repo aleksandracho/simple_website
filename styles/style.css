@@ -5,7 +5,7 @@ html {
     font-family: 'Lato', sans-serif;
 }
 
-.center {
+.container {
     max-width: 1030px;
     margin: auto;
 }
@@ -13,6 +13,7 @@ html {
 .top {
     background: url(../img/mountains.jpg) no-repeat;
     height: 356px;
+    border-bottom: 0.2rem solid #cacaca;
 }
 
 ul {
@@ -26,6 +27,10 @@ ul {
 li {
     display: inline;
     margin-right: 3rem;
+}
+
+.article {
+    border-bottom: 0.2rem solid #cacaca;
 }
 
 .search {
@@ -73,21 +78,10 @@ p {
     padding-left: 5rem;
 }
 
-.line_top {
-    background-color: #cacaca;
-    height: 0.2rem;
-}
-
 .text {
     column-count: 2;
     background-color: #eeeeee;
     padding-bottom: 3rem;
-}
-
-.line_bottom {
-    max-width: 103rem;
-    background-color: #cacaca;
-    height: 0.2rem;
 }
 
 img {
@@ -164,7 +158,7 @@ button {
     min-height: 32rem;
 }
 
-footer {
+.footer {
     position: relative;
     background-color: #eeeeee;
 }
@@ -198,13 +192,13 @@ a {
     width: 5.5rem;
 }
 
-.contact {
+.contact-form {
     float: left;
     margin: 1%;
     width: 46%;
 }
 
-.contact2 {
+.contact-data {
     float: left;
     margin: 1%;
     width: 46%;
