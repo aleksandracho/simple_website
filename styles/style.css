@@ -34,11 +34,12 @@ li {
 }
 
 .search {
-    background: url(../img/search.svg) right no-repeat;
     height: 5rem;
     display: block;
     margin-right: 3rem;
-    margin-top: -3.5rem
+    margin-top: -3.5rem;
+    font-size: 3rem;
+    color: #000;
 }
 
 .grey {
@@ -93,12 +94,6 @@ img {
 .adress {
     font-size: 1.8rem;
     line-height: 2;
-    background-color: #fff;
-    float: right;
-    margin-right: 14rem;
-    text-align: center;
-    color: #474545;
-    
 }
 
 form {
@@ -164,6 +159,7 @@ button {
 }
 
 .icons {
+    text-align: center;
     max-width: 22%;
     top: 30%;
     margin: auto;
@@ -174,22 +170,25 @@ a {
     display: inline-block;
 }
 
-.fb {
-    background: url(../img/facebook.svg) no-repeat;
-    height: 5.5rem;
-    width: 5.5rem;
+
+.social {
+    height: 5rem;
+    width: 5rem;
+    display: inline-block;
+    font-size: 2.5rem;
+    color: #fff;
+    background: #000;
+    border-radius: 3rem;
+    text-align: center;
+    position: relative;
+    margin: 0.5rem;
 }
 
-.insta {
-    background: url(../img/instagram.svg) no-repeat;
-    height: 5.5rem;
-    width: 5.5rem;
-}
-
-.twitter {
-    background: url(../img/twitter.svg) no-repeat;
-    height: 5.5rem;
-    width: 5.5rem;
+.social i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .contact-form {
@@ -198,11 +197,16 @@ a {
     width: 46%;
 }
 
+.phone {
+    font-size: 2.5rem;
+}
+
 .contact-data {
     float: left;
     margin: 1%;
     width: 46%;
     padding-top: 125px;
+    text-align: center;
 }
 
 @media all and (max-width: 980px) {
