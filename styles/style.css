@@ -1,75 +1,6 @@
-@import url(reset.css);
-
 html {
     font-size: 62.5%;
     font-family: 'Lato', sans-serif;
-}
-
-.container {
-    max-width: 1030px;
-    margin: auto;
-}
-
-.top {
-    background: url(../img/mountains.jpg) no-repeat;
-    height: 356px;
-    border-bottom: 0.2rem solid #cacaca;
-}
-
-ul {
-    font-size: 1.3rem;
-    font-weight: bold;
-    list-style-type: none;
-    margin-left: 60rem;
-    padding: 1.5rem;
-}
-
-li {
-    display: inline;
-    margin-right: 3rem;
-}
-
-.article {
-    border-bottom: 0.2rem solid #cacaca;
-}
-
-.search {
-    height: 5rem;
-    display: block;
-    margin-right: 3rem;
-    margin-top: -3.5rem;
-    font-size: 3rem;
-    color: #000;
-}
-
-.grey {
-    color: #eeeeee;
-}
-
-.light_grey {
-    color: #f3f3f3;
-}
-
-h1 {
-    font-size: 2.4rem;
-    color: #fff;
-    margin-top: 1.8rem;
-    margin-left: 5rem;
-}
-
-h2 {
-    font-size: 3.6rem;
-    padding-top: 3.5rem;
-    padding-bottom: 3rem;
-    text-align: center;
-    background-color: #eeeeee;
-}
-
-h4 {
-    font-size: 3.6rem;
-    padding-bottom: 3rem;
-    padding-left: 8rem;
-    padding-top: 5rem;
 }
 
 p {
@@ -79,48 +10,116 @@ p {
     padding-left: 5rem;
 }
 
+input, textarea {
+    background: none;
+    border: 1px #c9c9c9 solid;
+    font-size: 1.4rem;
+    color: #6a6868;
+}  
+
+.container a:hover, a:visited, a:link, a:active {
+    text-decoration: none;
+    color: #fff;
+}
+
+.container {
+    max-width: 1030px;
+    margin: auto;
+}
+
+.top {
+    background: url(../img/mountains.jpg);
+    background-size: cover;
+    height: 360px;
+    border-bottom: 0.2rem solid #cacaca;
+    position: relative;
+}
+
+.navigation {
+    position: absolute;
+    top: 0.2rem;
+    right: 2rem;
+}
+
+ul {
+    font-size: 1.3rem;
+    font-weight: bold;
+    list-style-type: none;
+    padding: 0.5rem;
+    display: inline;
+}
+
+li {
+    display: inline;
+    margin-right: 3rem;
+}
+
+.top.row .search {
+    height: 5rem;
+    font-size: 3rem;
+    color: #000;
+}
+
+.top.row a {
+    color: #000;
+}
+
+.top.row .main-header {
+    font-size: 2.4rem;
+    color: #fff;
+    margin-top: 1.8rem;
+    margin-left: 5rem;
+    position: absolute;
+    top: 17rem;
+    left: 0.3rem;
+}
+
+.article {
+    background: #eeeeee;
+    border-bottom: 0.2rem solid #cacaca;
+}
+
+.article.row .article-header {
+    margin: auto;
+    font-size: 3.6rem;
+    padding-top: 3.5rem;
+    padding-bottom: 3rem;
+    text-align: center;
+}
+
+.bottom.row .contact-header {
+    font-size: 3.6rem;
+    padding-bottom: 3rem;
+    padding-left: 8rem;
+    padding-top: 5rem;
+}
+
 .text {
     column-count: 2;
-    background-color: #eeeeee;
     padding-bottom: 3rem;
 }
 
-img {
-    margin-right: 25rem;
-    margin-top: -1rem;
-    float: right;
+.bottom {
+    background-color: #fff;
+    min-height: 32rem;
 }
 
-.adress {
-    font-size: 1.8rem;
-    line-height: 2;
-}
-
-form {
-    float:left;
+.contact-form {
     width: 32rem;
     padding-left: 8rem;
 }
 
-.data {
-    display: inline-block;
-    width: 32rem;
-    height: 3.4rem;
-    
-}
-
-input {
-    width: 9em;
+.name, .email {
+    width: 100%;
     height: 3.5rem;
-    margin-right: 3rem;
     font-size: 1.4rem;
     text-align: center;
     font-family: 'Lato';
 }
 
-textarea {
-    width: 28rem;
-    height: 3.4rem;
+.msg {
+    width: 100%;
+    height: 3.5rem;
     margin-top: 2.5rem;
     padding: .5rem;
     text-align: center;
@@ -129,28 +128,20 @@ textarea {
     font-family: 'Lato';
 }
 
-input, textarea {
-    background: none;
-    border: 1px #c9c9c9 solid;
-    font-size: 1.4rem;
-    color: #6a6868;
-}
-
-button {
+.send {
     background: #999999;
     border: none;
     padding: 0.5rem 2rem;
     color: #fff;
     font-size: 1.2rem;
-    float: right;
     cursor: pointer;
     margin-top: 1rem;
     margin-right: 3rem;
 }
 
-.bottom {
-    background-color: #fff;
-    min-height: 32rem;
+.address {
+    font-size: 1.8rem;
+    line-height: 2;
 }
 
 .footer {
@@ -165,11 +156,6 @@ button {
     margin: auto;
     position: relative;
 }
-
-a {
-    display: inline-block;
-}
-
 
 .social {
     height: 5rem;
@@ -191,80 +177,12 @@ a {
     transform: translate(-50%, -50%);
 }
 
-.contact-form {
-    float: left;
-    margin: 1%;
-    width: 46%;
-}
-
 .phone {
     font-size: 2.5rem;
+    padding-top: 7rem;
 }
 
 .contact-data {
-    float: left;
-    margin: 1%;
-    width: 46%;
-    padding-top: 125px;
+    padding-top: 1rem;
     text-align: center;
-}
-
-@media all and (max-width: 980px) {
-    ul {
-        font-size: -0.7rem;
-        font-weight: normal;
-        list-style-type: none;
-        margin-left: 25rem;
-        padding: 2.5rem;
-    }
-}
-
-@media all and (max-width: 820px) {
-    .contact {
-        float: left;
-        margin: 1%;
-        width: 98%;
-    }
-
-    .contact2 {
-        float: left;
-        margin: 1%;
-        width: 98%;
-        padding: 0%;
-    }
-
-    footer {
-        float: left;
-        margin: 0%;
-        width: 100%;
-        background-color: #eeeeee;
-        min-height: 170px;
-    }
-
-    a {
-        display: block;
-    }
-
-    h4 {
-        text-align: center;
-    }
-
-    form {
-        width: 32rem;
-        margin: auto;
-        position: relative;
-        float: none;
-    }
-
-    img {
-        margin-right: 36rem;
-    }
-
-    .adress {
-        margin-right: 25rem;
-    }
-
-    .icons {
-        max-width: 4%;
-    }
 }
