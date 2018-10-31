@@ -9,25 +9,28 @@
     <link rel="stylesheet" type="text/css" href="styles/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns"
         crossorigin="anonymous">
-    <title>Biuro podróży</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <title>Simple website</title>
 </head>
 
 <body>
-
     <div class="container">
-        <nav class="top">
-            <ul>
-                <li>ABOUT</li>
-                <li>OUR PROJECTS</li>
-                <li>CONTACT</li>
-            </ul>
-            <a class="search" href="#"><i class="fas fa-search"></i></a>
-            <h1>Explore the world with us</h1>
+        <nav class="top row">
+            <div class="navigation">
+                <ul>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">OUR PROJECTS</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+                <a class="search" href="#"><i class="fas fa-search"></i></a>
+            </div>
+            <h1 class="main-header">Explore the world with us</h1>
         </nav>
-        <article class="article">
-            <h2>about</h2>
+        <article class="article row">
+            <h2 class="article-header">about</h2>
             <p class="text">
-                our passion to work. dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                Our passion to work. dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
                 ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur
                 adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
@@ -39,26 +42,38 @@
                 veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.
             </p>
         </article>
-        <section class="bottom">
-            <div class="contact-form">
-                <h4>Contact us:</h4>
-                <form action="">
-                    <div class="data">
-                        <input type="text" value="Name">
-                        <input type="email" value="Email">
+        <section class="bottom row">
+            <div class="col">
+                <h4 class="contact-header">Contact us:</h4>
+                <form class="contact-form container" action="">
+                    <div class="row">
+                        <div class="col">
+                            <input type="text" class="name" placeholder="Name">
+                        </div>
+                        <div class="col">
+                            <input type="email" class="email" placeholder="Email">
+                        </div>
                     </div>
-                    <textarea>Message</textarea>
-                    <button>SEND</button>
+                    <div class="row">
+                        <div class="col">
+                            <textarea class="msg">Message</textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col text-right">
+                            <button class="send">SEND</button>
+                        </div>
+                    </div>
                 </form>
             </div>
-            <div class="contact-data">
+            <div class="contact-data col">
                 <div class="phone">
                     <i class="fas fa-phone"></i>
                 </div>
-                <p class="adress">Our office</br>Hamburg, Germany</br>04901010101</p>
+                <p class="address">Our office</br>Hamburg, Germany</br>04901010101</p>
             </div>
         </section>
-        <footer class="footer">
+        <footer class="footer row">
             <div class="icons">
                 <a class="social" href="#"><i class="fab fa-facebook-f"></i></a>
                 <a class="social" href="#"><i class="fab fa-instagram"></i></a>
@@ -66,7 +81,6 @@
             </div>
         </footer>
     </div>
-
 </body>
 
 </html>
